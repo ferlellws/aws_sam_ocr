@@ -180,11 +180,11 @@ Resources:
                       RunOrder: 2
                 - Name: Gamma
                   Actions:
-                    - Name: CreateChangeSet
+                    - Name: DeploymentApproval
                       ActionTypeId:
-                        Category: Deploy
+                        Category: Approval
                         Owner: AWS
-                        Provider: CloudFormation
+                        Provider: Manual
                         Version: "1"
                       Configuration:
                         ActionMode: CHANGE_SET_REPLACE
